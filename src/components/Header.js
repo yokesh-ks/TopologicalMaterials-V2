@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Layout from "./layout";
+import Layout from "./Layout";
 
 const Header = () => {
   return (
