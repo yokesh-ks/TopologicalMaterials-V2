@@ -1,3 +1,3 @@
 ### Topological Materials
 
-Live Link - https://topological-materials.vercel.app/
+Live Link - https://topologicalmaterials.vercel.app/
