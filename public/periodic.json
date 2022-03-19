@@ -1,0 +1,711 @@
+[
+    {
+        "id": 1,
+        "name": "Hydrogen",
+        "symbol": "H",
+        "category": "Non-metal"
+    },
+    {
+        "id": 2,
+        "name": "Helium",
+        "symbol": "He",
+        "category": "noble-gas"
+    },
+    {
+        "id": 3,
+        "name": "Lithium",
+        "symbol": "Li",
+        "category": "alkali"
+    },
+    {
+        "id": 4,
+        "name": "Beryllium",
+        "symbol": "Be",
+        "category": "alkaline"
+    },
+    {
+        "id": 5,
+        "name": "Boron",
+        "symbol": "B",
+        "category": "metalloid"
+    },
+    {
+        "id": 6,
+        "name": "Carbon",
+        "symbol": "C",
+        "category": "polyatomic-non-metal"
+    },
+    {
+        "id": 7,
+        "name": "Nitrogen",
+        "symbol": "N",
+        "category": "diatomic-nonmetal"
+    },
+    {
+        "id": 8,
+        "name": "Oxygen",
+        "symbol": "O",
+        "category": "diatomic-nonmetal"
+    },
+    {
+        "id": 9,
+        "name": "Fluorine",
+        "symbol": "F",
+        "category": "diatomic-nonmetal"
+    },
+    {
+        "id": 10,
+        "name": "Neon",
+        "symbol": "Ne",
+        "category": "noble-gas"
+    },
+    {
+        "id": 11,
+        "name": "Sodium",
+        "symbol": "Na",
+        "category": "alkali"
+    },
+    {
+        "id": 12,
+        "name": "Magnesium",
+        "symbol": "Mg",
+        "category": "alkaline"
+    },
+    {
+        "id": 13,
+        "name": "Aluminium",
+        "symbol": "Al",
+        "category": ""
+    },
+    {
+        "id": 14,
+        "name": "Silicon",
+        "symbol": "Si",
+        "category": "metalloid"
+    },
+    {
+        "id": 15,
+        "name": "Phosphorus",
+        "symbol": "P",
+        "category": "polyatomic-non-metal"
+    },
+    {
+        "id": 16,
+        "name": "Sulphur",
+        "symbol": "S",
+        "category": "polyatomic-non-metal"
+    },
+    {
+        "id": 17,
+        "name": "Chlorine",
+        "symbol": "Cl",
+        "category": "diatomic-nonmetal"
+    },
+    {
+        "id": 18,
+        "name": "Argon",
+        "symbol": "Ar",
+        "category": "noble-gas"
+    },
+    {
+        "id": 19,
+        "name": "Potassium",
+        "symbol": "K",
+        "category": "alkali"
+    },
+    {
+        "id": 20,
+        "name": "Calcium",
+        "symbol": "Ca",
+        "category": "alkaline"
+    },
+    {
+        "id": 21,
+        "name": "Scandium",
+        "symbol": "Sc",
+        "category": ""
+    },
+    {
+        "id": 22,
+        "name": "Titanium",
+        "symbol": "Ti",
+        "category": ""
+    },
+    {
+        "id": 23,
+        "name": "Vanadium",
+        "symbol": "V",
+        "category": ""
+    },
+    {
+        "id": 24,
+        "name": "Chromium",
+        "symbol": "Cr",
+        "category": ""
+    },
+    {
+        "id": 25,
+        "name": "Manganese",
+        "symbol": "Mn",
+        "category": ""
+    },
+    {
+        "id": 26,
+        "name": "Iron",
+        "symbol": "Fe",
+        "category": ""
+    },
+    {
+        "id": 27,
+        "name": "Cobalt",
+        "symbol": "Co",
+        "category": ""
+    },
+    {
+        "id": 28,
+        "name": "Nickel",
+        "symbol": "Ni",
+        "category": ""
+    },
+    {
+        "id": 29,
+        "name": "Copper",
+        "symbol": "Cu",
+        "category": ""
+    },
+    {
+        "id": 30,
+        "name": "Zinc",
+        "symbol": "Zn",
+        "category": ""
+    },
+    {
+        "id": 31,
+        "name": "Gallium",
+        "symbol": "Ga",
+        "category": ""
+    },
+    {
+        "id": 32,
+        "name": "Germanium",
+        "symbol": "Ge",
+        "category": "metalloid"
+    },
+    {
+        "id": 33,
+        "name": "Arsenic",
+        "symbol": "As",
+        "category": "metalloid"
+    },
+    {
+        "id": 34,
+        "name": "Selenium",
+        "symbol": "Se",
+        "category": "polyatomic-non-metal"
+    },
+    {
+        "id": 35,
+        "name": "Bromide",
+        "symbol": "Br",
+        "category": "diatomic-nonmetal"
+    },
+    {
+        "id": 36,
+        "name": "Krypton",
+        "symbol": "Kr",
+        "category": "noble-gas"
+    },
+    {
+        "id": 37,
+        "name": "Rubidium",
+        "symbol": "Rb",
+        "category": "alkali"
+    },
+    {
+        "id": 38,
+        "name": "Strontium",
+        "symbol": "Sr",
+        "category": "alkaline"
+    },
+    {
+        "id": 39,
+        "name": "Yttrium",
+        "symbol": "Y",
+        "category": ""
+    },
+    {
+        "id": 40,
+        "name": "Zirconium",
+        "symbol": "Zr",
+        "category": ""
+    },
+    {
+        "id": 41,
+        "name": "Niobium",
+        "symbol": "Nb",
+        "category": ""
+    },
+    {
+        "id": 42,
+        "name": "Molybdenum",
+        "symbol": "Mo",
+        "category": ""
+    },
+    {
+        "id": 43,
+        "name": "Technetium",
+        "symbol": "Tc",
+        "category": ""
+    },
+    {
+        "id": 44,
+        "name": "Ruthenium",
+        "symbol": "Ru",
+        "category": ""
+    },
+    {
+        "id": 45,
+        "name": "Rhodium",
+        "symbol": "Rh",
+        "category": ""
+    },
+    {
+        "id": 46,
+        "name": "Palladium",
+        "symbol": "Pd",
+        "category": ""
+    },
+    {
+        "id": 47,
+        "name": "Silver",
+        "symbol": "Ag",
+        "category": ""
+    },
+    {
+        "id": 48,
+        "name": "Cadmium",
+        "symbol": "Cd",
+        "category": ""
+    },
+    {
+        "id": 49,
+        "name": "Indium",
+        "symbol": "In",
+        "category": ""
+    },
+    {
+        "id": 50,
+        "name": "Tin",
+        "symbol": "Sn",
+        "category": ""
+    },
+    {
+        "id": 51,
+        "name": "Antimony",
+        "symbol": "Sb",
+        "category": "metalloid"
+    },
+    {
+        "id": 52,
+        "name": "Tellurium",
+        "symbol": "Te",
+        "category": "metalloid"
+    },
+    {
+        "id": 53,
+        "name": "Iodine",
+        "symbol": "I",
+        "category": "diatomic-nonmetal"
+    },
+    {
+        "id": 54,
+        "name": "Xenon",
+        "symbol": "Xe",
+        "category": "noble-gas"
+    },
+    {
+        "id": 55,
+        "name": "Caesium",
+        "symbol": "Cs",
+        "category": "alkali"
+    },
+    {
+        "id": 56,
+        "name": "Barium",
+        "symbol": "Ba",
+        "category": "alkaline"
+    },
+    
+    {
+        "id": 72,
+        "name": "Hafnium",
+        "symbol": "Hf",
+        "category": ""
+    },
+    {
+        "id": 73,
+        "name": "Tantalum",
+        "symbol": "Ta",
+        "category": ""
+    },
+    {
+        "id": 74,
+        "name": "Tungsten",
+        "symbol": "W",
+        "category": ""
+    },
+    {
+        "id": 75,
+        "name": "Rhenium",
+        "symbol": "Re",
+        "category": ""
+    },
+    {
+        "id": 76,
+        "name": "Osmium",
+        "symbol": "Os",
+        "category": ""
+    },
+    {
+        "id": 77,
+        "name": "Iridium",
+        "symbol": "Ir",
+        "category": ""
+    },
+    {
+        "id": 78,
+        "name": "Platinum",
+        "symbol": "Pt",
+        "category": ""
+    },
+    {
+        "id": 79,
+        "name": "Gold",
+        "symbol": "Au",
+        "category": ""
+    },
+    {
+        "id": 80,
+        "name": "Mercury",
+        "symbol": "Hg",
+        "category": ""
+    },
+    {
+        "id": 81,
+        "name": "Thallium",
+        "symbol": "Tl",
+        "category": ""
+    },
+    {
+        "id": 82,
+        "name": "Lead",
+        "symbol": "Pb",
+        "category": ""
+    },
+    {
+        "id": 83,
+        "name": "Bismuth",
+        "symbol": "Bi",
+        "category": ""
+    },
+    {
+        "id": 84,
+        "name": "Polonium",
+        "symbol": "Po",
+        "category": "metalloid"
+    },
+    {
+        "id": 85,
+        "name": "Astatine",
+        "symbol": "At",
+        "category": ""
+    },
+    {
+        "id": 86,
+        "name": "Radon",
+        "symbol": "Rn",
+        "category": "noble-gas"
+    },
+    {
+        "id": 87,
+        "name": "Francium",
+        "symbol": "Fr",
+        "category": ""
+    },
+    {
+        "id": 88,
+        "name": "Radium",
+        "symbol": "Ra",
+        "category": ""
+    },
+    
+    {
+        "id": 104,
+        "name": "Rutherfordium",
+        "symbol": "Rf",
+        "category": ""
+    },
+    {
+        "id": 105,
+        "name": "Dubnium",
+        "symbol": "Db",
+        "category": ""
+    },
+    {
+        "id": 106,
+        "name": "Seaborgium",
+        "symbol": "Sg",
+        "category": ""
+    },
+    {
+        "id": 107,
+        "name": "Bohrium",
+        "symbol": "Bh",
+        "category": ""
+    },
+    {
+        "id": 108,
+        "name": "Hassium",
+        "symbol": "Hs",
+        "category": ""
+    },
+    {
+        "id": 109,
+        "name": "Meitnerium",
+        "symbol": "Mt",
+        "category": ""
+    },
+    {
+        "id": 110,
+        "name": "Darmstadtium",
+        "symbol": "Ds",
+        "category": ""
+    },
+    {
+        "id": 111,
+        "name": "Roentgenium",
+        "symbol": "Rg",
+        "category": ""
+    },
+    {
+        "id": 112,
+        "name": "Copernicium",
+        "symbol": "Cn",
+        "category": ""
+    },
+    {
+        "id": 113,
+        "name": "Nihonium",
+        "symbol": "Nh",
+        "category": ""
+    },
+    {
+        "id": 114,
+        "name": "Flerovium",
+        "symbol": "Fl",
+        "category": ""
+    },
+    {
+        "id": 115,
+        "name": "Moscovium",
+        "symbol": "Mc",
+        "category": ""
+    },
+    {
+        "id": 116,
+        "name": "Livermorium",
+        "symbol": "Lv",
+        "category": ""
+    },
+    {
+        "id": 117,
+        "name": "Tennessine",
+        "symbol": "Ts",
+        "category": ""
+    },
+    {
+        "id": 118,
+        "name": "Oganesson",
+        "symbol": "Og",
+        "category": ""
+    },
+    {
+        "id": 57,
+        "name": "Lanthanum",
+        "symbol": "La",
+        "category": "lanthanide"
+    },
+    {
+        "id": 58,
+        "name": "Cerium",
+        "symbol": "Ce",
+        "category": "lanthanide"
+    },
+    {
+        "id": 59,
+        "name": "Praseodymium",
+        "symbol": "Pr",
+        "category": "lanthanide"
+    },
+    {
+        "id": 60,
+        "name": "Neodymium",
+        "symbol": "Nd",
+        "category": "lanthanide"
+    },
+    {
+        "id": 61,
+        "name": "Promethium",
+        "symbol": "Pm",
+        "category": "lanthanide"
+    },
+    {
+        "id": 62,
+        "name": "Samarium",
+        "symbol": "Sm",
+        "category": "lanthanide"
+    },
+    {
+        "id": 63,
+        "name": "Europium",
+        "symbol": "Eu",
+        "category": "lanthanide"
+    },
+    {
+        "id": 64,
+        "name": "Gadolinium",
+        "symbol": "Gd",
+        "category": "lanthanide"
+    },
+    {
+        "id": 65,
+        "name": "Terbium",
+        "symbol": "Tb",
+        "category": "lanthanide"
+    },
+    {
+        "id": 66,
+        "name": "Dysprosium",
+        "symbol": "Dy",
+        "category": "lanthanide"
+    },
+    {
+        "id": 67,
+        "name": "Holmium",
+        "symbol": "Ho",
+        "category": "lanthanide"
+    },
+    {
+        "id": 68,
+        "name": "Erbium",
+        "symbol": "Er",
+        "category": "lanthanide"
+    },
+    {
+        "id": 69,
+        "name": "Thulium",
+        "symbol": "Tm",
+        "category": "lanthanide"
+    },
+    {
+        "id": 70,
+        "name": "Ytterbium",
+        "symbol": "Yb",
+        "category": "lanthanide"
+    },
+    {
+        "id": 71,
+        "name": "Lutetium",
+        "symbol": "Lu",
+        "category": "lanthanide"
+    },{
+        "id": 89,
+        "name": "Actinium",
+        "symbol": "Ac",
+        "category": "actinide"
+    },
+    {
+        "id": 90,
+        "name": "Thorium",
+        "symbol": "Th",
+        "category": "actinide"
+    },
+    {
+        "id": 91,
+        "name": "Protactinium",
+        "symbol": "Pa",
+        "category": "actinide"
+    },
+    {
+        "id": 92,
+        "name": "Uranium",
+        "symbol": "U",
+        "category": "actinide"
+    },
+    {
+        "id": 93,
+        "name": "Neptunium",
+        "symbol": "Np",
+        "category": "actinide"
+    },
+    {
+        "id": 94,
+        "name": "Plutonium",
+        "symbol": "Pu",
+        "category": "actinide"
+    },
+    {
+        "id": 95,
+        "name": "Americium",
+        "symbol": "Am",
+        "category": "actinide"
+    },
+    {
+        "id": 96,
+        "name": "Curium",
+        "symbol": "Cm",
+        "category": "actinide"
+    },
+    {
+        "id": 97,
+        "name": "Berkelium",
+        "symbol": "Bk",
+        "category": "actinide"
+    },
+    {
+        "id": 98,
+        "name": "Californium",
+        "symbol": "Cf",
+        "category": "actinide"
+    },
+    {
+        "id": 99,
+        "name": "Einsteinium",
+        "symbol": "Es",
+        "category": "actinide"
+    },
+    {
+        "id": 100,
+        "name": "Fermium",
+        "symbol": "Fm",
+        "category": "actinide"
+    },
+    {
+        "id": 101,
+        "name": "Mendelevium",
+        "symbol": "Md",
+        "category": "actinide"
+    },
+    {
+        "id": 102,
+        "name": "Nobelium",
+        "symbol": "No",
+        "category": "actinide"
+    },
+    {
+        "id": 103,
+        "name": "Lawrencium",
+        "symbol": "Lr",
+        "category": "actinide"
+    }
+]
