@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Header from "../src/components/Header";
-import { periodicData } from "../utils/api";
+import { periodicData, materialOutput } from "../utils/api";
 import PeriodicTable from "../src/components/PeriodicTable";
 
 export default function Home() {
@@ -15,27 +15,38 @@ export default function Home() {
     })();
   }, []);
 
+  const handleSearch = async () => {
+    const response = await materialOutput(selectedElement)
+  }
+
   const handleElement = (e) => {
-    const element = e.target.innerText;
-    let filterData = [...selectedElement];
-    if (!selectedElement.includes(element)) {
-      filterData.push(element);
-    } else {
-      filterData = filterData.filter((item) => item !== element);
+    if (isNaN(e.target.innerText)) {
+      const element = e.target.innerText;
+      let filterData = [...selectedElement];
+      if (!selectedElement.includes(element)) {
+        filterData.push(element);
+      } else {
+        filterData = filterData.filter((item) => item !== element);
+      }
+      setSelectedElement(filterData);
     }
-    setSelectedElement(filterData);
   };
 
   return (
     <>
       <Head>
-        <title>Yokesh Tools</title>
+        <title>Topological Materials</title>
         <meta name="description" content="Tools" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
+      <Header
+        selectedElement={selectedElement}
+        setSelectedElement={setSelectedElement}
+        handleSearch={handleSearch}
+      />
 
       <div style={{ marginTop: 100 }}></div>
+
       <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
         <PeriodicTable
           data={allPeriodic}

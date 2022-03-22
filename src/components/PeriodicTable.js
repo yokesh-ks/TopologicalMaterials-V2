@@ -32,6 +32,7 @@ const ElementContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(18, 0fr);
   gap: 10px;
+  padding: 40px;
 `;
 
 const Element = styled.button`
@@ -62,7 +63,8 @@ const Element = styled.button`
   }
 
   &:hover {
-    background: linear-gradient(to right, #fdc830, #f37335);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.5);
   }
 
   &:nth-child(2) {
