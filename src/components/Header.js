@@ -7,7 +7,7 @@ const Header = () => {
     <MainHeader>
       <Layout>
         <Nav>
-          <Title>Topological Materials</Title>
+          <h2 className="font-bold text-2xl">Topological Materials</h2>
         </Nav>
       </Layout>
     </MainHeader>
@@ -31,10 +31,4 @@ const Nav = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
-`;
-
-const Title = styled.h2`
-  font-size: 20px;
-  font-weight: 300;
-  color: #fa4eab;
 `;
