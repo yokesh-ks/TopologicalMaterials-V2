@@ -3,6 +3,7 @@ import Head from "next/head";
 import Header from "../src/components/Header";
 import { periodicData } from "../utils/api";
 import PeriodicTable from "../src/components/PeriodicTable";
+import { fetchMaterials } from "../utils/api";
 
 export default function Home() {
   const [allPeriodic, setAllPeriodic] = React.useState([]);

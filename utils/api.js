@@ -7,3 +7,5 @@ export const apiCall = (path) =>
   }).then((res) => res.json());
 
 export const periodicData = () => apiCall("./periodic.json");
+
+export const fetchMaterials = () => apiCall("/api/materials");
