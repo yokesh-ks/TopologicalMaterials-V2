@@ -1,14 +1,25 @@
-import { Microscope, Users, Crown, PackageSearch } from "lucide-react";
-import Github from "./assets/github";
-import Spinner from "./assets/spinner";
-
-const iconComponents = {
+import {
   Microscope,
   Users,
   Crown,
   PackageSearch,
+  FileText,
+  BookOpen,
+  MessageCircle,
+} from "lucide-react";
+import Github from "./assets/github";
+import Spinner from "./assets/spinner";
+
+const iconComponents = {
+  BookOpen,
+  Crown,
+  FileText,
   Github,
+  Microscope,
+  PackageSearch,
   Spinner,
+  Users,
+  MessageCircle,
 };
 
 export const Icon = (props) => {
@@ -16,7 +27,7 @@ export const Icon = (props) => {
 
   if (IconComponent) {
     return (
-      <div className="flex justify-center">
+      <div className="flex">
         <IconComponent {...props} />
       </div>
     );
