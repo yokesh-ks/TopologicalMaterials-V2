@@ -36,18 +36,14 @@ export const Header = () => {
         >
           <p>Materials Explorer</p>
         </Link>
-        <Link
-          href="/contact"
-          className={`mr-5 text-sm ${pathname !== "/contact" && "opacity-60"}`}
-          passHref
-        >
-          <p>Contact</p>
-        </Link>
       </div>
       <div
         className="flex sm:items-center pl-8 pb-3 sm:p-0 gap-4
       "
       >
+        <Button variant="outline" onClick={() => router.push("/contact")}>
+          Feedback
+        </Button>
         <ModeToggle />
         {data?.user ? (
           <UserNav user={data?.user} />

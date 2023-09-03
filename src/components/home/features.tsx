@@ -51,10 +51,10 @@ export const Features = () => {
           {featuresData.map((item, index) => (
             <div className="w-full px-4 md:w-1/2 lg:w-1/4" key={index}>
               <div className="wow fadeInUp group mb-12" data-wow-delay=".1s">
-                <div className="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-[secondary]">
+                <div className="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-primary">
                   <Icon
                     name={item?.iconName || "Microscope"}
-                    className="w-[32px] h-[32px]"
+                    className="w-[32px] h-[32px] text-primary-foreground"
                   />
                 </div>
                 <h4 className="mb-3 text-xl font-bold text-dark">

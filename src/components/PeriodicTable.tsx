@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Card } from "./ui/card";
 
 function PeriodicTable(props) {
   const { data, handleElement, selectedElement } = props;
@@ -19,12 +20,23 @@ function PeriodicTable(props) {
 }
 
 const ElementBox = ({ item, handleElement, selectedElement }) => (
-  <Element
-    onClick={handleElement}
-    active={selectedElement.includes(item?.symbol) ? true : false}
-  >
-    <span>{item?.id}</span>
-    <abbr title="Hydrogen">{item?.symbol}</abbr>
+  <Element onClick={handleElement}>
+    <Card
+      className={`w-10 h-10 cursor-pointer relative ${
+        selectedElement.includes(item?.symbol)
+          ? "bg-primary text-primary-foreground"
+          : "bg-default text-default-foreground hover:bg-secondary hover:text-secondary-foreground"
+      } `}
+    >
+      <span className="absolute top-[4px] right-[4px]">{item?.id}</span>
+      <abbr
+        title="Hydrogen"
+        className="w-full h-full flex items-center justify-center no-underline"
+        style={{ fontSize: 16 }}
+      >
+        {item?.symbol}
+      </abbr>
+    </Card>
   </Element>
 );
 
@@ -35,34 +47,8 @@ const ElementContainer = styled.div`
 `;
 
 const Element = styled.button`
-  width: 52px;
-  height: 52px;
-  cursor: pointer;
-  background: ${(props) =>
-    props.active ? "linear-gradient(to right, #fdc830, #f37335)" : "#091921"};
-  box-shadow: rgb(255 255 255 / 7%) -2px -2px 4px, rgb(0 0 0 / 80%) 2px 2px 6px;
-  border-radius: 6px;
-  outline: none;
-  border: none;
-  color: #fff;
-
   span {
-    font-size: 8px;
-    position: absolute;
-    margin: 8px;
-  }
-
-  abbr {
-    width: 100%;
-    height: 100%;
-    padding: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  &:hover {
-    background: linear-gradient(to right, #fdc830, #f37335);
+    font-size: 6px;
   }
 
   &:nth-child(2) {
