@@ -2,9 +2,12 @@ import React from "react";
 import { ModeToggle } from "./mode-toggle";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Button } from "./ui/button";
+import { useRouter } from "next/router";
 
 export const Header = () => {
   const pathname = usePathname();
+  const router = useRouter();
   return (
     <nav className="border-b flex flex-col sm:flex-row items-start sm:items-center sm:pr-10">
       <div className="py-3 px-8 flex flex-1 items-center">
@@ -29,12 +32,20 @@ export const Header = () => {
         >
           <p>Materials Explorer</p>
         </Link>
+        <Link
+          href="/contact"
+          className={`mr-5 text-sm ${pathname !== "/contact" && "opacity-60"}`}
+          passHref
+        >
+          <p>Contact</p>
+        </Link>
       </div>
       <div
-        className="flex sm:items-center pl-8 pb-3 sm:p-0
+        className="flex sm:items-center pl-8 pb-3 sm:p-0 gap-4
       "
       >
         <ModeToggle />
+        <Button onClick={() => router.push("/sign-in")}>Sign in</Button>
       </div>
     </nav>
   );
