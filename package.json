@@ -53,6 +53,7 @@
     "react-day-picker": "^8.8.1",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.45.4",
+    "react-markdown": "^8.0.7",
     "resend": "^1.0.0",
     "styled-components": "^5.3.3",
     "styled-normalize": "^8.0.7",

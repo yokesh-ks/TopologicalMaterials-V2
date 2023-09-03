@@ -13,7 +13,7 @@ export const Header = () => {
   const { data } = useSession();
   console.log({ data });
   return (
-    <nav className="border-b flex flex-col sm:flex-row items-start sm:items-center sm:pr-10">
+    <nav className="border-b flex flex-col sm:flex-row items-start sm:items-center sm:pr-10 fixed w-full z-20 bg-background">
       <div className="py-3 px-8 flex flex-1 items-center">
         <Link href="/" className="mr-5 flex items-center" passHref>
           <p className={`ml-2 mr-4 text-lg font-semibold`}>
