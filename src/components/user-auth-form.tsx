@@ -1,6 +1,8 @@
 "use client";
 
 import * as React from "react";
+import { useSearchParams } from "next/navigation";
+import { signIn } from "next-auth/react";
 import { cn } from "@/utils/cn";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
@@ -12,13 +14,31 @@ interface UserAuthFormProps extends React.HTMLAttributes<HTMLDivElement> {}
 export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
   const [isLoading, setIsLoading] = React.useState<boolean>(false);
 
+  const searchParams = useSearchParams();
+  const callbackUrl = searchParams?.get("from") || "/";
+
+  console.log({ callbackUrl });
+
   async function onSubmit(event: React.SyntheticEvent) {
     event.preventDefault();
     setIsLoading(true);
 
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 3000);
+    // Typecast event.target to HTMLFormElement
+    const formElement = event.target as HTMLFormElement;
+
+    const signInResult = await signIn("email", {
+      email: formElement?.email?.value.toLowerCase(),
+      redirect: false,
+      callbackUrl: callbackUrl,
+    });
+    console.log({ signInResult });
+
+    setIsLoading(false);
+    if (!signInResult?.ok) {
+      console.log("Error");
+    } else {
+      console.log("Success");
+    }
   }
 
   return (
@@ -57,13 +77,29 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
           </span>
         </div>
       </div>
-      <Button variant="outline" type="button" disabled={isLoading}>
-        {isLoading ? (
-          <Icon name="Spinner" className="mr-2 h-4 w-4 animate-spin" />
-        ) : (
-          <Icon name="Github" className="mr-2 h-4 w-4" />
-        )}{" "}
-        Github
+      <Button
+        variant="outline"
+        type="button"
+        disabled={isLoading}
+        onClick={() => {
+          signIn("google", {
+            callbackUrl,
+          });
+        }}
+      >
+        <Icon name="Google" className="mr-2 h-4 w-4" /> Google
+      </Button>
+      <Button
+        variant="outline"
+        type="button"
+        disabled={isLoading}
+        onClick={() => {
+          signIn("github", {
+            callbackUrl,
+          });
+        }}
+      >
+        <Icon name="Github" className="mr-2 h-4 w-4" /> Github
       </Button>
     </div>
   );

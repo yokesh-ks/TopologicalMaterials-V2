@@ -4,10 +4,14 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "./ui/button";
 import { useRouter } from "next/router";
+import { UserNav } from "./user-nav";
+import { useSession } from "next-auth/react";
 
 export const Header = () => {
   const pathname = usePathname();
   const router = useRouter();
+  const { data } = useSession();
+  console.log({ data });
   return (
     <nav className="border-b flex flex-col sm:flex-row items-start sm:items-center sm:pr-10">
       <div className="py-3 px-8 flex flex-1 items-center">
@@ -45,7 +49,11 @@ export const Header = () => {
       "
       >
         <ModeToggle />
-        <Button onClick={() => router.push("/sign-in")}>Sign in</Button>
+        {data?.user ? (
+          <UserNav user={data?.user} />
+        ) : (
+          <Button onClick={() => router.push("/sign-in")}>Sign in</Button>
+        )}
       </div>
     </nav>
   );
