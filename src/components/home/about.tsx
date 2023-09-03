@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Button } from "../ui/button";
 import { Badge } from "../ui/badge";
 import { useRouter } from "next/router";
@@ -20,9 +21,9 @@ export const About = () => {
                     Exploring Boundaries, Unleashing Potential
                   </h2>
                   <p className="mb-9 text-base leading-relaxed text-body-color">
-                    At Topological Materials, we're driven by an unwavering
-                    passion for pushing the boundaries of what's possible. Our
-                    story is one of innovation, curiosity, and a relentless
+                    At Topological Materials, we&apos;re driven by an unwavering
+                    passion for pushing the boundaries of what&apos;s possible.
+                    Our story is one of innovation, curiosity, and a relentless
                     pursuit of excellence in the field of materials science.
                   </p>
                   <p className="mb-9 text-base leading-relaxed text-body-color">

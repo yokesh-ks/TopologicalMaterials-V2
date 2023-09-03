@@ -22,8 +22,8 @@ export const Hero = () => {
                 Welcome to the future of materials science. Our Topological
                 Materials Explorer invites you to a realm where materials defy
                 convention, opening doors to unprecedented possibilities. With
-                supercomputing and cutting-edge research, we're pioneering a
-                journey into the world of topological materials, where
+                supercomputing and cutting-edge research, we&apos;re pioneering
+                a journey into the world of topological materials, where
                 innovation knows no bounds.
               </p>
               <ul className="mb-10 flex flex-wrap items-center justify-center">

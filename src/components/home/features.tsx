@@ -40,9 +40,9 @@ export const Features = () => {
               </h2>
               <p className="text-lg leading-relaxed text-body-color sm:text-xl sm:leading-relaxed">
                 Our Topological Materials Explorer awaits your curiosity. Join
-                us on this extraordinary journey as we redefine what's possible
-                with materials. Ready to explore the limitless potential of
-                topological materials?
+                us on this extraordinary journey as we redefine what&apos;s
+                possible with materials. Ready to explore the limitless
+                potential of topological materials?
               </p>
             </div>
           </div>
