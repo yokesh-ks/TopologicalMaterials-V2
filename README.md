@@ -10,6 +10,8 @@
 
 Welcome to the future of materials science. Our Topological Materials Explorer invites you to a realm where materials defy convention, opening doors to unprecedented possibilities. With supercomputing and cutting-edge research, we're pioneering a journey into the world of topological materials, where innovation knows no bounds.
 
+![Topological Explorer ScreenShot](/public/screenshot.png)
+
 ## Features
 
 - Next.js 13 App Directory
