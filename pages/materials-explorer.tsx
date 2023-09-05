@@ -12,16 +12,11 @@ import {
 } from "@/components/ui/tooltip";
 import { fetchMaterials } from "../src/utils/api";
 import { Icon } from "@/icon";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-  CardFooter,
-} from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import { useRouter } from "next/router";
 import { useToast } from "@/components/ui/use-toast";
+import { DataTable } from "@/components/explorer/data-table";
+import { columns } from "@/components/explorer/columns";
 
 export default function Home() {
   const router = useRouter();
@@ -143,6 +138,10 @@ export default function Home() {
           />
         ) : null}
 
+        {materialResult.length > 0 ? (
+          <DataTable data={materialResult} columns={columns} />
+        ) : null}
+
         {materialResult?.length === 0 && !showPeriodicTable && !isSearching ? (
           <>
             <Card className="flex w-full flex-col p-4 items-center justify-center gap-4 my-4">
@@ -159,46 +158,6 @@ export default function Home() {
                 Show Periodic Table
               </Button>
             </Card>
-          </>
-        ) : null}
-
-        {materialResult?.length > 0 ? (
-          <>
-            <CardTitle>Results</CardTitle>
-            {materialResult.map((item, index) => (
-              <Card key={index} className="w-full relative p-4">
-                <CardHeader className="p-0">
-                  <CardTitle className="w-full relative">
-                    <span>{item.full_formula}</span>
-                    <div className="flex gap-2 absolute top-0 right-0">
-                      {Object.entries(item.unit_cell_formula).map(
-                        ([key, value]: any) => (
-                          <Badge key={key}>
-                            {key} - {value}
-                          </Badge>
-                        )
-                      )}
-                    </div>
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="p-0 py-2">
-                  <span className="font-bold">Crystal Structure: </span>
-                  <span className="capitalize">
-                    {item.spacegroup.crystal_system}
-                  </span>
-                </CardContent>
-                <CardFooter className="w-full justify-end flex p-0">
-                  <Button
-                    variant="link"
-                    onClick={() =>
-                      router.push(`/view-detail?id=${item.material_id}`)
-                    }
-                  >
-                    View Detail &rarr;
-                  </Button>
-                </CardFooter>
-              </Card>
-            ))}
           </>
         ) : null}
       </div>
