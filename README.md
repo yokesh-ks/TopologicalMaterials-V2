@@ -12,14 +12,31 @@ Welcome to the future of materials science. Our Topological Materials Explorer i
 
 ![Topological Explorer ScreenShot](/public/screenshot.png)
 
-## Project Features
+---
 
-- Next.js 13 App Directory
-- Radix UI Primitives
-- Tailwind CSS
-- Icons from [Lucide](https://lucide.dev)
-- Dark mode with `next-themes`
-- Tailwind CSS class sorting, merging and linting.
+## Tech Stack + Features
+
+### Frameworks
+
+- [`Next.js`](https://nextjs.org/) – A powerful React framework that enables building performant apps with an excellent developer experience.
+
+### Platforms
+
+- [`Vercel`](https://vercel.com/) – Effortlessly preview and deploy changes using Git for seamless collaboration.
+
+### UI
+
+- [`Tailwind CSS`](https://tailwindcss.com/) – A utility-first CSS framework that accelerates UI development with its responsive components.
+- [`Lucide`](https://lucide.dev/) – Discover beautifully simple and pixel-perfect icons for enhancing visuals.
+- [`Radix`](https://www.radix-ui.com/) – Access a set of primitives such as modals, popovers, etc., to create a polished user experience.
+
+### Code Quality
+
+- [`TypeScript`](https://www.typescriptlang.org/) – Benefit from static type checking for end-to-end type safety in the application.
+- [`Prettier`](https://prettier.io/) – Utilize this opinionated code formatter to maintain consistent code style across the project.
+- [`ESLint`](https://eslint.org/) – Implement a pluggable linter for Next.js and TypeScript to enforce coding standards.
+
+---
 
 ## Commands
 
@@ -29,6 +46,8 @@ Welcome to the future of materials science. Our Topological Materials Explorer i
 | `pnpm dev`    | Start local dev server at `localhost:3000`                                 |
 | `pnpm build`  | Build your production site to `./dist/`                                    |
 | `pnpm commit` | Create a new Git commit with standardized commit messages using commitizen |
+
+---
 
 ## Project Tree
 
