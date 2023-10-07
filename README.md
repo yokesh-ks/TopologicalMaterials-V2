@@ -30,3 +30,20 @@ Welcome to the future of materials science. Our Topological Materials Explorer i
 | `pnpm build`  | Build your production site to `./dist/`                                    |
 | `pnpm commit` | Create a new Git commit with standardized commit messages using commitizen |
 
+## Project Tree
+
+```
+📦 TopologicalMaterials-V2
+├─ pages
+│  ├─ api
+│  └─ index.tsx
+├─ prisma
+├─ public
+├─ src
+│  ├─ components
+│  ├─ icon
+│  ├─ lib
+│  └─ utils
+└─ styles
+```
+
