@@ -12,7 +12,7 @@ Welcome to the future of materials science. Our Topological Materials Explorer i
 
 ![Topological Explorer ScreenShot](/public/screenshot.png)
 
-## Features
+## Project Features
 
 - Next.js 13 App Directory
 - Radix UI Primitives
